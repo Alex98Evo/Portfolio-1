@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 header {
@@ -12,8 +13,9 @@ header {
     text-align: center;
 }
 
-h1 {
+header h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 nav ul {
@@ -29,10 +31,22 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
+    margin: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 .gallery {
@@ -45,7 +59,10 @@ main {
 .image-container {
     width: calc(33.333% - 20px);
     margin: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .image-container img {
@@ -62,4 +79,5 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
