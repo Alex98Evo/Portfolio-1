@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <h1>Mein Portfolio</h1>
+    </header>
+    
+    <section id="home">
+        <h2>Willkommen auf meiner Portfolio-Website</h2>
+        <p>Hier finden Sie eine Auswahl meiner besten Arbeiten.</p>
+    </section>
+
+    <section id="about">
+        <h2>Über mich</h2>
+        <p>Ich bin Alexander Kuhn aus der Schweiz. Ich Fotografie seit 2013. Seit 2021 Fotografiere Ich auch mit Film um eine grössere Technische Herausforderung wahrzunehmen. Ich fotografiere am meisten Landschaft, Stadtleben oder Architektur. .</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Galerie</h2>
+        <div class="image-container">
+            <img src="bilder/bild1.jpg" alt="Bild 1 Beschreibung">
+        </div>
+        <div class="image-container">
+            <img src="bilder/bild2.jpg" alt="Bild 2 Beschreibung">
+        </div>
+        <div class="image-container">
+            <img src="bilder/bild3.jpg" alt="Bild 3 Beschreibung">
+        </div>
+        <!-- Füge hier weitere Bilder hinzu -->
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alexander Kuhn. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
